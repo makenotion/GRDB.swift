@@ -37,7 +37,7 @@ jobs:
             name: "macOS 12, Xcode 14.0.1, Swift 5.7"
             shell: "/bin/zsh {0}"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
       - name: ${{ matrix.name }}
         run: make test_framework_GRDBOSX_maxSwift
   iOS:
@@ -53,7 +53,7 @@ jobs:
             name: "macOS 12, Xcode 14.0.1, Swift 5.7"
             shell: "/bin/zsh {0}"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
       - name: ${{ matrix.name }}
         run: make test_framework_GRDBiOS_maxTarget_maxSwift
   SPM:
@@ -69,7 +69,7 @@ jobs:
             name: "macOS 12, Xcode 14.0.1, Swift 5.7"
             shell: "/bin/zsh {0}"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
       - name: ${{ matrix.name }}
         run: make test_SPM test_install_SPM
   SQLCipher3:
@@ -85,7 +85,7 @@ jobs:
             name: "macOS 12, Xcode 14.0.1, Swift 5.7"
             shell: "/bin/zsh {0}"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
       - name: ${{ matrix.name }}
         run: make test_framework_SQLCipher3Encrypted
   SQLCipher4:
@@ -101,7 +101,7 @@ jobs:
             name: "macOS 12, Xcode 14.0.1, Swift 5.7"
             shell: "/bin/zsh {0}"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
       - name: ${{ matrix.name }}
         run: make test_framework_SQLCipher4Encrypted
   CustomSQLite:
@@ -117,7 +117,7 @@ jobs:
             name: "macOS 12, Xcode 14.0.1, Swift 5.7"
             shell: "/bin/zsh {0}"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
       - name: ${{ matrix.name }}
         run: make test_framework_GRDBCustomSQLiteOSX
   XCFramework:
@@ -133,7 +133,7 @@ jobs:
             name: "macOS 12, Xcode 14.0.1, Swift 5.7"
             shell: "/bin/zsh {0}"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
       - name: ${{ matrix.name }}
         run: make test_archive_GRDBOSX_xcframework
     
